@@ -29,9 +29,9 @@ export type ThemeType = typeof theme;
 
 // Para colores
 export const color =
-    (key: keyof ThemeType["colors"]) =>
+    (key: keyof ThemeType["colors"], alpha: string = "") =>
     ({ theme }: { theme: ThemeType }) =>
-        theme.colors[key];
+        `${theme.colors[key]}${alpha}`;
 
 // Para espaciados
 export const spacing =
@@ -40,7 +40,7 @@ export const spacing =
         theme.spacing[key];
 
 // Parra las fuentes
-export const fonts =
+export const font =
     (key: keyof ThemeType["fonts"]) =>
     ({ theme }: { theme: ThemeType }) =>
         theme.fonts[key];

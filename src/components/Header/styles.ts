@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, spacing, fonts } from "../../theme";
+import { color, spacing, font } from "../../theme";
 import { blur } from "../../mixins";
 
 export const Header = styled.header`
@@ -30,19 +30,19 @@ export const LogoSection = styled.div`
 export const TitleGroup = styled.hgroup``;
 
 export const LogoText = styled.h1`
-    font-family: ${fonts("headline")};
+    font-family: ${font("headline")};
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -0.02em;
     color: ${color("onBackground")};
 `;
 
 export const Subtitle = styled.p`
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 600;
     color: ${color("primary")}CC;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
 `;
 
 export const NavLinks = styled.nav`
