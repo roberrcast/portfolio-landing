@@ -24,3 +24,23 @@ export const theme = {
 };
 
 export type ThemeType = typeof theme;
+
+/* -- Funciones auxiliares para evitar escribir ${({ theme }) => theme.colors.primary} etc. todo el tiempo -- */
+
+// Para colores
+export const color =
+    (key: keyof ThemeType["colors"]) =>
+    ({ theme }: { theme: ThemeType }) =>
+        theme.colors[key];
+
+// Para espaciados
+export const spacing =
+    (key: keyof ThemeType["spacing"]) =>
+    ({ theme }: { theme: ThemeType }) =>
+        theme.spacing[key];
+
+// Parra las fuentes
+export const fonts =
+    (key: keyof ThemeType["fonts"]) =>
+    ({ theme }: { theme: ThemeType }) =>
+        theme.fonts[key];
