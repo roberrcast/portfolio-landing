@@ -45,8 +45,8 @@ export const LogoText = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    font-size: ${fluid(".875rem", "1rem", "500px", "1500px")} !important;
-    font-weight: 600;
+    font-size: ${fluid(".875rem", "1rem", "500px", "1500px")};
+    font-weight: 500;
     color: ${color("primary", "CC")};
     text-transform: uppercase;
     letter-spacing: 0.2em;
