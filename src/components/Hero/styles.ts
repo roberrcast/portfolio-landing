@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { color, font, spacing } from "../../theme";
+import { fluid } from "../../mixins";
 
 const bounce = keyframes`
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
@@ -9,14 +10,20 @@ const bounce = keyframes`
 
 export const HeroContainer = styled.section`
     position: relative;
-    height: 100vh;
+    min-height: 100dvh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 ${spacing("mobileMargin")};
+    padding: 80px ${spacing("mobileMargin")};
+
+    @media (orientation: landscape) and (max-height: 600px) {
+        padding-top: 180px;
+        padding-bottom: 60px;
+        justify-content: flex-start;
+    }
 `;
 
 export const BackgroundImage = styled.div<{ $src: string }>`
@@ -48,13 +55,18 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
     font-family: ${font("headline")};
-    font-size: 56px;
+    font-size: 40px;
     line-height: 1.1;
     margin-bottom: 24px;
     color: ${color("onBackground")};
 
     @media (min-width: 768px) {
         font-size: 88px;
+    }
+
+    @media (max-height: 500px) and (orientation: landscape) {
+        font-size: 32px;
+        margin-bottom: 12px;
     }
 `;
 
@@ -98,6 +110,10 @@ export const ScrollIndicator = styled.div`
     gap: 16px;
     opacity: 0.4;
     animation: ${bounce} 2s infinite;
+
+    @media (max-height: 500px) {
+        display: none;
+    }
 `;
 
 export const ScrollText = styled.span`

@@ -1,23 +1,30 @@
 import styled from "styled-components";
 import { color, spacing, font } from "../../theme";
-import { blur } from "../../mixins";
+import { blur, fluid } from "../../mixins";
 
-export const Header = styled.header`
+export const Header = styled.header<{ $visible: boolean }>`
     position: fixed;
     top: 0;
     width: 100%;
+    transition: transform 0.4s ease-in-out;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 ${spacing("mobileMargin")};
-    background-color: ${color("background")}CC;
+    background-color: ${color("background", "CC")};
     ${blur(12)};
     border-bottom: 1px solid ${color("outlineVariant")};
     z-index: 1000;
+    transform: ${({ $visible }) =>
+        $visible ? "translateY(0)" : "translateY(-100%)"};
 
     @media (min-width: 768px) {
-        padding: ${spacing("desktopMargin")};
+        padding: 45px ${spacing("desktopMargin")};
+    }
+
+    @media (orientation: landscape) and (max-height: 500px) {
+        height: 56px;
     }
 `;
 
@@ -30,17 +37,17 @@ export const LogoSection = styled.div`
 export const TitleGroup = styled.hgroup``;
 
 export const LogoText = styled.h1`
+    font-size: ${fluid("1.625rem", "2rem", "500px", "1500px")};
     font-family: ${font("headline")};
-    font-size: 32px;
     font-weight: 500;
     letter-spacing: -0.02em;
     color: ${color("onBackground")};
 `;
 
 export const Subtitle = styled.p`
-    font-size: 17px;
+    font-size: ${fluid(".875rem", "1rem", "500px", "1500px")} !important;
     font-weight: 600;
-    color: ${color("primary")}CC;
+    color: ${color("primary", "CC")};
     text-transform: uppercase;
     letter-spacing: 0.2em;
 `;

@@ -17,8 +17,9 @@ body {
    scroll-behavior: smooth;
 }
    
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: ${(props) => props.theme.fonts.headline};
+    font-size: unset;
 }
    
 a {
@@ -31,5 +32,32 @@ button {
    border: none;
    background: none;
    font-family: inherit;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.material-symbols-outlined {
+   font-family: 'Material Symbols Outlined' !important;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 1;
+   letter-spacing: normal;
+   text-transform: none;
+   display: inline-block;
+   white-space: nowrap;
+   word-wrap: normal;
+   direction: ltr;
+   -webkit-font-smoothing: antialiased;
+   
+   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 `;

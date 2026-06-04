@@ -5,7 +5,7 @@ export const Philosophy = () => {
         <S.PhilosophyContainer>
             <S.StaveLine />
 
-            <S.QuoteContent>
+            <S.QuoteContent className="reveal">
                 <S.QuoteText>
                     "Capturando la textura del tiempo a través del lente de la
                     precisión moderna."
