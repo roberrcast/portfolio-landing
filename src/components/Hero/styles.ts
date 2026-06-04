@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import { color, font, spacing } from "../../theme";
-import { fluid } from "../../mixins";
 
 const bounce = keyframes`
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
