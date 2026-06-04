@@ -1,3 +1,4 @@
+import { useScrollDirection } from "../../hooks/useScrollDirection";
 import * as S from "./styles";
 
 const LINKS = [
@@ -7,8 +8,11 @@ const LINKS = [
 ];
 
 export const Header = () => {
+    const scrollDirection = useScrollDirection();
+    const isVisible = scrollDirection === "up";
+
     return (
-        <S.Header>
+        <S.Header $visible={isVisible}>
             <S.LogoSection>
                 <S.Icon>menu</S.Icon>
                 <S.TitleGroup>

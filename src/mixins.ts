@@ -53,7 +53,7 @@ export const fluid = (
     const interceptPx = minSizePx - slope * minBreakpointPx;
 
     //La parte media de la función clamp(), usando el slope e intercept calculados
-    const preferredValue = `${(slope * 100).toFixed(4)}vw + ${(interceptPx / 16).toFixed(4)}rem`;
+    const preferredValue = `calc(${(interceptPx / 16).toFixed(4)}rem + ${(slope * 100).toFixed(4)}vw)`;
 
     /* En caso de valores negativos por ejemplo '-3rem', '-6rem', '400px', '1500px' */
     const minValue = minSizePx < maxSizePx ? minSize : maxSize;

@@ -12,6 +12,10 @@ export const PhilosophyContainer = styled.section`
     @media (min-width: 768px) {
         padding: 128px ${spacing("desktopMargin")};
     }
+
+    @media (orientation: landscape) and (max-height: 500px) {
+        padding: 64px 10%;
+    }
 `;
 
 export const StaveLine = styled.div`
