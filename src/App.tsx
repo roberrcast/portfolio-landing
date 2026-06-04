@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
@@ -11,11 +12,15 @@ function App() {
     return (
         <>
             <Header />
-            <Hero />
-            <Philosophy />
-            <Gallery />
-            <TechnicalCraft />
-            <InquiryForm />
+
+            <main>
+                <Hero />
+                <Philosophy />
+                <Gallery />
+                <TechnicalCraft />
+                <InquiryForm />
+            </main>
+            <Footer />
         </>
     );
 }
