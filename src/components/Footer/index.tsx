@@ -16,6 +16,7 @@ export const Footer = () => {
                 <S.SocialIcon
                     href="https://github.com/roberrcast"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Perfil de github"
                     className="material-symbols-outlined"
                 >
@@ -25,6 +26,7 @@ export const Footer = () => {
                 <S.SocialIcon
                     href="https://www.linkedin.com/in/roberto-rodriguez-frontend-engineer"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Perfil de LinkedIn"
                     className="material-symbols-outlined"
                 >
@@ -34,6 +36,7 @@ export const Footer = () => {
                 <S.SocialIcon
                     href="https://www.instagram.com/rodriguezrobc/"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Instagram"
                     className="material-symbols-outlined"
                 >
