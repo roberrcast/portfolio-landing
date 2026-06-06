@@ -1,4 +1,4 @@
-# Stories Carved in Stone — Landing Page
+# Portfolio — Landing Page
 
     An interactive, minimalist landing page designed as a portfolio showcase for architectural photography and historical relics captured across Europe. Built with a
 
