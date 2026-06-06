@@ -102,7 +102,7 @@ export const CTAButton = styled.button`
 
 export const ScrollIndicator = styled.div`
     position: absolute;
-    bottom: 48px;
+    bottom: 28px; //Original value 48px
     display: flex;
     flex-direction: column;
     align-items: center;
