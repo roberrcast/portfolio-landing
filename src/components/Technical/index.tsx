@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import { camera } from "../../assets";
+import { camera, cameraSm } from "../../assets";
 
 export const TechnicalCraft = () => {
     return (
@@ -42,6 +42,8 @@ export const TechnicalCraft = () => {
                     <S.Frame>
                         <S.Image
                             src={camera}
+                            srcSet={`${cameraSm} 500w, ${camera} 900w`}
+                            sizes="(max-width: 768px) 100vw, 450px"
                             alt="Imagen de camara micro cuatro tercios"
                         />
                         <S.Badge>
