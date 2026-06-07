@@ -17,6 +17,10 @@ import statueSm from "./statue-sm.webp";
 import camera from "./camera.webp";
 import cameraSm from "./camera-sm.webp";
 
+import heroImg from "./hero.webp";
+import heroImgMd from "./hero-md.webp";
+import heroImgSm from "./hero-sm.webp";
+
 export {
     westminster,
     westminsterMd,
@@ -32,4 +36,7 @@ export {
     statueSm,
     camera,
     cameraSm,
+    heroImg,
+    heroImgMd,
+    heroImgSm,
 };
