@@ -4,7 +4,11 @@ import heroImg from "../../assets/hero.webp";
 export const Hero = () => {
     return (
         <S.HeroContainer>
-            <S.BackgroundImage $src={heroImg} />
+            <S.BackgroundImage
+                src={heroImg}
+                alt="Imagen de fondo de estatua medieval"
+                fetchPriority="high"
+            />
             <S.GradientOverlay />
             <S.Content>
                 <S.Title>Historias Talladas en Piedra</S.Title>
