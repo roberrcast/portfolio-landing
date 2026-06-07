@@ -12,7 +12,12 @@ export const Gallery = () => {
                         $aspectRatio={item.ratio}
                         className="reveal"
                     >
-                        <S.Image src={item.img} alt={item.title} />
+                        <S.Image
+                            src={item.img}
+                            srcSet={`${item.imgSm} 650w, ${item.imgMd} 1200w, ${item.img} 1500w`}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 658px"
+                            alt={item.title}
+                        />
 
                         <S.ContentOverlay>
                             <S.ItemCategory>{item.cat}</S.ItemCategory>

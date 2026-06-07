@@ -1,8 +1,23 @@
-import { westminster, face, market, statue } from "../../assets";
+import {
+    westminster,
+    westminsterMd,
+    westminsterSm,
+    face,
+    faceMd,
+    faceSm,
+    market,
+    marketMd,
+    marketSm,
+    statue,
+    statueMd,
+    statueSm,
+} from "../../assets";
 
 export interface Gallery {
     id: number;
     img: string;
+    imgMd: string;
+    imgSm: string;
     cat: string;
     title: string;
     cols: number;
@@ -13,6 +28,8 @@ export const galleryData: Gallery[] = [
     {
         id: 1,
         img: westminster,
+        imgMd: westminsterMd,
+        imgSm: westminsterSm,
         cat: "Palacio de Westminster, Londres",
         title: "Gótico Perpendicular",
         cols: 7,
@@ -21,6 +38,8 @@ export const galleryData: Gallery[] = [
     {
         id: 2,
         img: face,
+        imgMd: faceMd,
+        imgSm: faceSm,
         cat: "Estatua en el Louvre, París",
         title: "Fisonomía de la Sabiduría",
         cols: 5,
@@ -29,6 +48,8 @@ export const galleryData: Gallery[] = [
     {
         id: 3,
         img: market,
+        imgMd: marketMd,
+        imgSm: marketSm,
         cat: "Mercado San Miguel, Madrid",
         title: "Mercado Viejo",
         cols: 5,
@@ -37,6 +58,8 @@ export const galleryData: Gallery[] = [
     {
         id: 4,
         img: statue,
+        imgMd: statueMd,
+        imgSm: statueSm,
         cat: "Estatua en el V&A, Londres",
         title: "Postura Elegante",
         cols: 7,
