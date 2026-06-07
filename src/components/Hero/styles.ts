@@ -25,10 +25,9 @@ export const HeroContainer = styled.section`
     }
 `;
 
-export const BackgroundImage = styled.div<{ $src: string }>`
+export const BackgroundImage = styled.img`
     position: absolute;
     inset: 0;
-    background-image: url(${(props) => props.$src});
     background-size: cover;
     background-position: center;
     filter: brightness(0.5);
