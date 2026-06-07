@@ -15,6 +15,7 @@ import statueMd from "./statue-md.webp";
 import statueSm from "./statue-sm.webp";
 
 import camera from "./camera.webp";
+import cameraSm from "./camera-sm.webp";
 
 export {
     westminster,
@@ -30,4 +31,5 @@ export {
     statueMd,
     statueSm,
     camera,
+    cameraSm,
 };
