@@ -14,7 +14,7 @@ export const Gallery = () => {
                     >
                         <S.Image
                             src={item.img}
-                            srcSet={`${item.imgSm} 650w, ${item.imgMd} 1200w, ${item.img} 1500w`}
+                            srcSet={`${item.imgSm} 700w, ${item.imgMd} 1200w, ${item.img} 1500w`}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 660px"
                             loading="lazy"
                             alt={item.title}
