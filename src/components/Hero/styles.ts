@@ -28,8 +28,10 @@ export const HeroContainer = styled.section`
 export const BackgroundImage = styled.img`
     position: absolute;
     inset: 0;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     filter: brightness(0.5);
     z-index: -2;
 `;
