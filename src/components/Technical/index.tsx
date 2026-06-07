@@ -44,6 +44,7 @@ export const TechnicalCraft = () => {
                             src={camera}
                             srcSet={`${cameraSm} 500w, ${camera} 900w`}
                             sizes="(max-width: 768px) 100vw, 450px"
+                            loading="lazy"
                             alt="Imagen de camara micro cuatro tercios"
                         />
                         <S.Badge>
