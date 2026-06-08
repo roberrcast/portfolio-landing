@@ -19,7 +19,7 @@ export const Hero = () => {
                     históricos capturados a través del continente europeo.
                 </S.Description>
 
-                <S.CTAButton>Adquirir Impreisones y Licencias</S.CTAButton>
+                <S.CTAButton>Adquirir Impresiones y Licencias</S.CTAButton>
             </S.Content>
 
             <S.ScrollIndicator>
