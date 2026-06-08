@@ -16,18 +16,29 @@ export const InquiryForm = () => {
 
                 <S.Form>
                     <S.FormGroup>
-                        <S.Label>Nombre Completo</S.Label>
+                        <S.Label htmlFor="nombre">Nombre Completo</S.Label>
 
-                        <S.Input type="text" placeholder="JUAN PÉREZ" />
+                        <S.Input
+                            id="nombre"
+                            type="text"
+                            placeholder="JUAN PÉREZ"
+                        />
                     </S.FormGroup>
 
                     <S.FormGroup>
-                        <S.Input type="text" placeholder="MAIL@MAIL.COM" />
+                        <S.Label htmlFor="email">Correo Electrónico</S.Label>
+
+                        <S.Input
+                            id="email"
+                            type="email"
+                            placeholder="MAIL@MAIL.COM"
+                        />
                     </S.FormGroup>
 
                     <S.FormGroup>
-                        <S.Label>Tipo de Consulta</S.Label>
-                        <S.Select>
+                        <S.Label htmlFor="consulta">Tipo de Consulta</S.Label>
+
+                        <S.Select id="consulta">
                             <option>Selección de Impresión de Archivo</option>
                             <option>Licencia Comercial</option>
                             <option>Solicitud de Exhibición</option>
