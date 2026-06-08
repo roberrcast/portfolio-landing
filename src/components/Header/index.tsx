@@ -1,7 +1,7 @@
 import { useScrollDirection } from "../../hooks/useScrollDirection";
 import * as S from "./styles";
 
-const LINKS = [
+export const LINKS = [
     { id: 1, name: "La colección", path: "#" },
     { id: 2, name: "Acerda de", path: "#" },
     { id: 3, name: "Técnica", path: "#" },

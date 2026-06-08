@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { camera, cameraSm } from "../../assets";
 
-const TechnicalCraft = () => {
+export const TechnicalCraft = () => {
     return (
         <S.CraftSection>
             <S.Container>
@@ -58,5 +58,3 @@ const TechnicalCraft = () => {
         </S.CraftSection>
     );
 };
-
-export default TechnicalCraft;

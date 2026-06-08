@@ -1,6 +1,6 @@
 import * as S from "./styles";
 
-const InquiryForm = () => {
+export const InquiryForm = () => {
     return (
         <S.InquirySection id="inquiry">
             <S.FormContainer className="reveal">
@@ -46,5 +46,3 @@ const InquiryForm = () => {
         </S.InquirySection>
     );
 };
-
-export default InquiryForm;
