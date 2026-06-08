@@ -1,6 +1,6 @@
 import * as S from "./styles";
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <S.FooterContainer>
             <S.Brand>Roberto Rodríguez</S.Brand>
@@ -51,3 +51,5 @@ export const Footer = () => {
         </S.FooterContainer>
     );
 };
+
+export default Footer;
