@@ -1,6 +1,6 @@
 import * as S from "./styles";
 
-const Philosophy = () => {
+export const Philosophy = () => {
     return (
         <S.PhilosophyContainer>
             <S.StaveLine />
@@ -15,5 +15,3 @@ const Philosophy = () => {
         </S.PhilosophyContainer>
     );
 };
-
-export default Philosophy;
