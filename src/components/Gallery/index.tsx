@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { galleryData } from "./data";
 
-export const Gallery = () => {
+const Gallery = () => {
     return (
         <S.GallerySection>
             <S.Grid>
@@ -30,3 +30,5 @@ export const Gallery = () => {
         </S.GallerySection>
     );
 };
+
+export default Gallery;

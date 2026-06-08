@@ -1,11 +1,13 @@
-import { Footer } from "./components/Footer";
-import { Gallery } from "./components/Gallery";
+import { lazy, Suspense } from "react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { InquiryForm } from "./components/Inquiry";
-import { Philosophy } from "./components/Philosophy";
-import { TechnicalCraft } from "./components/Technical";
 import { useReveal } from "./hooks/useReveal";
+
+const Philosophy = lazy(() => import("./components/Philosophy"));
+const Gallery = lazy(() => import("./components/Gallery"));
+const TechnicalCraft = lazy(() => import("./components/Technical"));
+const InquiryForm = lazy(() => import("./components/Inquiry"));
+const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
     useReveal();
@@ -15,12 +17,16 @@ function App() {
 
             <main>
                 <Hero />
-                <Philosophy />
-                <Gallery />
-                <TechnicalCraft />
-                <InquiryForm />
+                <Suspense fallback={null}>
+                    <Philosophy />
+                    <Gallery />
+                    <TechnicalCraft />
+                    <InquiryForm />
+                </Suspense>
             </main>
-            <Footer />
+            <Suspense fallback={null}>
+                <Footer />
+            </Suspense>
         </>
     );
 }
