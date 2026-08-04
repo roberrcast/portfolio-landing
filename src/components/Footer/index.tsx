@@ -24,10 +24,10 @@ export const Footer = () => {
                 </S.SocialIcon>
 
                 <S.SocialIcon
-                    href="https://www.linkedin.com/in/roberto-rodriguez-frontend-engineer"
+                    href="https://www.robrodriguez.dev"
                     target="_blank"
                     rel="noopener"
-                    aria-label="Perfil de LinkedIn"
+                    aria-label="Sitio web personal"
                     className="material-symbols-outlined"
                 >
                     planet
@@ -41,6 +41,16 @@ export const Footer = () => {
                     className="material-symbols-outlined"
                 >
                     photo_camera
+                </S.SocialIcon>
+
+                <S.SocialIcon
+                    href="https://www.linkedin.com/in/roberto-rodriguez-frontend-engineer"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Perfil de LinkedIn"
+                    className="material-symbols-outlined"
+                >
+                    work
                 </S.SocialIcon>
             </S.SocialIcons>
 
